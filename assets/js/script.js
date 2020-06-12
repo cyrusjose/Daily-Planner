@@ -20,7 +20,7 @@ $(document).ready(function() {
     ];
     var currentHour = moment().format('h');
     for (var i = 0; i < hours.length; i++) {
-        var timeBlock = $('<div class = "hour">');
+        var timeBlock = $('<div class = "hour row time-block">');
         timeBlock.text(hours[i]);
 
         $('.container').append(timeBlock)
