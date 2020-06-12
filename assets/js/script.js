@@ -18,6 +18,10 @@ $(document).ready(function() {
         "4PM",
         "5PM",
     ];
+    // if (hour < current){}
+    // else if(hour > current){}
+    // else {}
+    // will be used for comparison
     var currentHour = moment().format('h');
     for (var i = 0; i < hours.length; i++) {
         var timeBlock = $('<div class = "hour row time-block">');
