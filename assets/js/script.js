@@ -22,7 +22,7 @@ $(document).ready(function() {
     for (var i = 0; i < hours.length; i++) {
         var timeBlock = $('<div class = "hour">');
         timeBlock.text(hours[i]);
-        // timeBlock.addclass('block');
+
         $('.container').append(timeBlock)
 
     }
