@@ -21,9 +21,11 @@ $(document).ready(function() {
     var currentHour = moment().format('h');
     for (var i = 0; i < hours.length; i++) {
         var timeBlock = $('<div class = "hour row time-block">');
+        var descrptionArea = $('<textArea>');
         timeBlock.text(hours[i]);
 
         $('.container').append(timeBlock)
+        $('.container').append(descrptionArea);
 
     }
 });
