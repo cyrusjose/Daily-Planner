@@ -7,13 +7,16 @@ $(document).ready(function() {
 
 
     // Display current day on page (##/##/####) format
-    var today = moment().subtract(10, "days").calendar();
+    var today = moment().format('MMMM Do YYYY, h:mm:ss a');
     $("#currentDay").text(today);
     //Create the hours
 
-    // if (hour < current){}
+    var currentHour = moment().format("h");
+    // if (hour < current){
+
+    // }
     // else if(hour > current){}
     // else {}
     // will be used for comparison
-    var currentHour = moment().format("h");
+    console.log(currentHour)
 });
