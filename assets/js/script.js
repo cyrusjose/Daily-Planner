@@ -30,8 +30,9 @@ $(document).ready(function () {
   var currentHour = moment().format("h");
   for (var i = 0; i < hours.length; i++) {
     var timeBlock = $('<div class = "hour time-block row">');
-    var description = $('<textArea class = ')
+    var description = $('<textArea class = "time-block">')
     timeBlock.text(hours[i]);
     $(".container").append(timeBlock);
+    $('.hour').append(description)
   }
 });
