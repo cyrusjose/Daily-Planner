@@ -7,7 +7,7 @@ $(document).ready(function() {
 
 
     // Display current day on page (##/##/####) format
-    var today = moment().format('MMMM Do YYYY, h:mm:ss a');
+    var today = moment().format('MMMM Do YYYY, h:mm a');
     $("#currentDay").text(today);
     //Create the hours
 
