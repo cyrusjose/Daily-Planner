@@ -12,11 +12,18 @@ $(document).ready(function() {
     //Create the hours
 
     var currentHour = moment().format("h");
-    // if (hour < current){
+    // var timeBlock = $('.hour')
+    if ($('.hour') === current) {
+        $('.description').addClass('present')
+    }
 
-    // }
-    // else if(hour > current){}
-    // else {}
-    // will be used for comparison
-    console.log(currentHour)
+    console.log(currentHour);
+    var textEl = document.querySelectorAll('.description')
+
+    textEl.value = localStorage.getItem('description');
+
+    $('.saveBtn').on('click', function() {
+
+        localStorage.setItem('description', textEl.value);
+    })
 });
